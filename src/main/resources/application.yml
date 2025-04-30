@@ -3,7 +3,9 @@ spring:
         name: springai-starter
     ai:
         openai:
-            api-key: ${OPENAI_API_KEY}
             chat:
+                base-url: https://generativelanguage.googleapis.com
+                completions-path: /v1beta/openai/chat/completions
                 options:
-                    model: gpt-3.5-turbo
+                    model: gemini-2.0-flash
+            api-key: ${YOUR_API_KEY}

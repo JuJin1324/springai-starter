@@ -1,9 +1,9 @@
 # Spring AI Starter
 
-## 사용 예시 (Open AI 사용)
+## 사용 예시 (Google Gemini 사용)
 
 ### 의존성 추가 (Gradle)
-
+> Google Gemini 에서는 현재(2025-04-30) 공식적으로 Java, Spring SDK 를 제공하지 않기 때문에 openai 라이브러리를 이용하여 구현한다.
 > ```groovy
 > dependencies {
 >     implementation 'org.springframework.ai:spring-ai-starter-model-openai'
@@ -16,10 +16,12 @@
 > spring:
 >   ai:
 >       openai:
->           api-key: ${OPENAI_API_KEY}
 >           chat:
+>               base-url: https://generativelanguage.googleapis.com
+>               completions-path: /v1beta/openai/chat/completions
 >               options:
->                   model: gpt-3.5-turbo
+>                   model: gemini-2.0-flash
+>           api-key: ${YOUR_API_KEY}
 > ```
 
 ---

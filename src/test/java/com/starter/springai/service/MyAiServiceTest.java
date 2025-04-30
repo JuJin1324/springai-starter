@@ -11,7 +11,7 @@ class MyAiServiceTest {
 
     @Test
     void getAnswer() {
-        String question = "오늘의 날씨를 알려줄래?";
+        String question = "오늘의 서울 날씨를 알려줄래?";
         String answer = myAiService.getAnswer(question);
         System.out.println("답변: " + answer);
     }
