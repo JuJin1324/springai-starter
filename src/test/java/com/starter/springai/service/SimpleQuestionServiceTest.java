@@ -5,14 +5,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MyAiServiceTest {
+class SimpleQuestionServiceTest {
     @Autowired
-    private MyAiService myAiService;
+    private SimpleQuestionService simpleQuestionService;
 
     @Test
     void getAnswer() {
         String question = "오늘의 서울 날씨를 알려줄래?";
-        String answer = myAiService.getAnswer(question);
+        String answer = simpleQuestionService.getAnswer(question);
         System.out.println("답변: " + answer);
     }
 }
