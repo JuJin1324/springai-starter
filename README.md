@@ -11,7 +11,7 @@
 > ```
 
 ### application.yml 설정
-
+> Gemini 사용 가능 모델 확인 링크: https://ai.google.dev/gemini-api/docs/models
 > ```yaml
 > spring:
 >   ai:
